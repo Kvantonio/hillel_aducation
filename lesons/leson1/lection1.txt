@@ -1,0 +1,77 @@
+Bash - https://tproger.ru/translations/bash-cheatsheet/
+
+chmod - https://habr.com/ru/post/469667/
+
+
+pip
+
+https://realpython.com/what-is-pip/
+https://pip.pypa.io/en/stable/
+https://pypi.org/
+
+pip install <name_of_lib_or_git_repo>
+pip search <search_query>
+pip uninstall <name_of_package>
+pip freeze
+pip install -r requirements.txt
+
+
+
+venv
+
+https://realpython.com/python-virtual-environments-a-primer/
+https://docs.python.org/3/library/venv.html
+
+python -m venv <path> (.venv)
+source <path>/bin/activate - Unix
+<path>\Scripts\activate.bat - Windows
+deactivate
+
+
+
+virtualenvwrapper
+
+https://virtualenvwrapper.readthedocs.io/en/latest/
+
+pip install virtualenvwrapper - Unix
+pip install virtualenvwrapper-win - Windows
+
+
+mkvirtualenv <name>
+workon <name>
+source deactivate
+
+
+
+pipenv
+
+https://github.com/pypa/pipenv
+
+pip3 install pipenv
+pipenv --python 3.8
+pipenv shell
+exit
+
+pipenv install [lib][==<version>] [--dev]
+pipenv uninstall [lib]
+pipenv run python script.py
+pipenv lock
+pipenv install --system
+
+
+pyenv
+
+curl https://pyenv.run | bash
+pyenv install [version]
+pyenv uninstall [version]
+pyenv local [version]
+pyenv global [version]
+pyenv shell [version]
+pyenv version
+pyenv versions
+pyenv virtualenv [version] <virtualenv-name>
+pyenv virtualenvs
+
+
+https://hackernoon.com/reaching-python-development-nirvana-bb5692adf30c
+https://dev.to/writingcode/the-python-virtual-environment-with-pyenv-pipenv-3mlo
